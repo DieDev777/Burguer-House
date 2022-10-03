@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(93, 43, 7);
+}
+
+.hero {
+    /* height:100vh; */
+    background-image: url(../img/Pattern7.png);
+
+
+}
+
+.hero__header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding: 1rem;
+    padding-bottom: 0;
+
+}
+
+
+.hero__header .logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 1.5px 1.5px 2px white;
+    color: rgb(219, 26, 26);
+
+}
+
+.header__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+
+}
+
+.header__right p {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px white;
+}
+
+.header__right .menu {
+    list-style: none;
+    display: flex;
+    font-size: 1.4rem;
+    font-family: 'Bebas Neue', cursive;
+    gap: 2rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-shadow: 1.5px 1.5px 2px white;
+
+
+}
+
+.hero__main {
+    display: flex;
+    padding-inline: 4rem;
+
+}
+
+.hero__main>div {
+    flex: 1;
+
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+    text-shadow: 2px 2px 4px white;
+
+}
+
+.hero__text h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 200;
+    font-size: 1.3rem;
+    border: 2px dashed rgb(93, 43, 7);
+    width: max-content;
+    padding: 0.5rem;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+    margin-left: -3rem;
+    box-shadow: 15px 15px 30px black;
+
+
+}
+
+.hero__img:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 0;
+    margin-left: -32rem;
+    box-shadow: 15px 15px 30px black;
+    padding: 7rem;
+
+}
+
+.hero__text h2 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 4rem;
+    line-height: 1;
+    margin: 1rem;
+    /* text-shadow: 2px 2px 4px rgb(205, 72, 35); */
+    text-shadow: 2px 2px 4px white;
+    margin-left: -3rem;
+}
+
+.hero__text h3 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgb(205, 72, 35);
+    text-shadow: 2px 2px 4px white;
+    margin-left: -3rem;
+
+
+}
+
+.header__img img {
+    max-width: 4000px;
+
+}
+
+.sale {
+    position: absolute;
+    bottom: -0.5rem;
+    margin-left: -40rem;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    padding: 1.4rem;
+    border-radius: 50%;
+    border: 2px dashed white;
+    outline: 5px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+
+}
+
+.price,
+.only,
+.price small {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.price {
+    font-size: 2rem;
+}
+
+.price small {
+    font-size: 1.4rem;
+
+}
+
+.only {
+    font-size: 1.7rem;
+    line-height: 1;
+    letter-spacing: 4px;
+
+
+}
+
+/**** GRID ****/
+
+.grid {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "item1 item1"
+        "item2 item3";
+    gap: 2rem;
+
+}
+
+.grid__item {
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    padding: 2rem;
+    box-shadow: 15px 15px 30px black;
+
+}
+
+.grid__item1 {
+    grid-area: item1;
+    background-image: url(../img/hamb44.jpg);
+    height: 400px;
+    
+}
+
+.grid__item h5,
+.grid__item h4 {
+    color: rgb(240, 18, 18);
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+
+}
+
+.grid__item h4 {
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 2px white;
+}
+
+.grid__item h5 {
+    font-size: 1.6rem;
+    text-shadow: 2px 2px 3px white;
+}
+
+.grid__item2 {
+    grid-area: item2;
+    background-image: url(../img/burgok.jpg);
+    height: 400px;
+    
+}
+
+.grid__item3 {
+    grid-area: item3;
+    background-image: url(../img/ham3.jpg);
+    height: 400px;
+    
+}
+
+/**** ENJOY ****/
+
+.enjoy {
+    padding: 6rem;
+    padding-top: 0;
+
+
+}
+
+.titles h4 {
+    text-align: center;
+    padding-inline: 9rem;
+    background-color: rgb(167, 159, 49);
+    font-family: 'Bebas Neue', cursive;
+    padding: .5rem 1rem 0.25rem 1rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px white;
+    box-shadow: 15px 15px 30px black;
+    border: 1.6px dashed black;
+
+}
+
+.titles {
+    text-align: center;
+    padding-inline: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titles h2 {
+
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px white;
+}
+
+.cards {
+    display: flex;
+    gap: 2rem;
+
+
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 15px 15px 30px black;
+
+}
+
+.card a:hover {
+    transform: scale(1.3);
+}
+
+
+.card img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px black;
+    color: rgb(240, 18, 18);
+}
+
+.card p {
+    font-family: 'Lato', sans-serif;
+    width: 75%;
+    text-align: center;
+}
+
+.card a {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 4px black;
+    background-color: red;
+    padding: 0.75rem 1rem;
+    color: white;
+    text-decoration: none;
+    box-shadow: 4px 4px 8px black;
+    border: 1.6px dashed white;
+
+}
+
+/**** EVENTS ****/
+
+.events {
+    padding: 6rem;
+    padding-top: 0;
+
+}
+
+.inner {
+    display: flex;
+    padding: 2rem;
+    box-shadow: 15px 15px 30px black;
+}
+
+.inner__left {
+    padding-block: 2rem;
+    flex: 1;
+    position: relative;
+
+}
+
+.inner img {
+    border-radius: 0.5rem;
+    margin-left: -4rem;
+    box-shadow: 15px 15px 30px black;
+}
+
+.inner__left h5 {
+
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: rgb(47, 41, 41);
+    letter-spacing: 0.4rem;
+
+}
+
+.inner__left h3 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px white;
+}
+
+.inner__left p {
+    font-family: 'Lato', sans-serif;
+    color: rgb(47, 41, 41);
+    font-size: 1.1rem;
+    width: 80%;
+}
+
+.inner>div {
+    flex: 1;
+    min-width: 0;
+}
+
+.inner__right {
+    flex: 1.25;
+    min-width: 0;
+
+
+
+}
+
+.inner__right {
+    max-width: 100%;
+    flex-direction: 1;
+}
+
+.dots {
+    display: flex;
+    gap: 7px;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(64, 57, 57);
+    border-radius: 50%;
+
+}
+
+.dot-y {
+    background-color: red;
+}
+
+.dlt {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 5px rgb(68, 59, 59);
+    text-align: center;
+    text-shadow: 3px 3px 7px black;
+
+}
+
+/**** RESERVATION ****/
+.reservation {
+    padding: 6rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    background-repeat: no-repeat;
+    /* url(../img/bhouse.jpg);
+    background-size:
+        700px,
+        300px;
+    background-position:
+        /* left */
+    /* right*/
+    background-image: url(../img/icon2.jpg);
+    background-size:
+        700px,
+        300px;
+    background-position:
+        center center;
+    box-shadow: 15px 15px 30px black;
+    margin: 100px;
+
+}
+
+.reservation__heading {
+    text-align: center;
+
+}
+
+.reservation__heading h5 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    font-size: 1.7rem;
+    text-shadow: 2px 2px 4px white;
+}
+
+.reservation h4 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px white;
+
+}
+
+.reservation__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "name email"
+        "date time"
+        "people button";
+    width: 36rem;
+    gap: 1rem;
+
+}
+
+.reservation__form input {
+    padding: 0.75rem 1.2rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    color: black;
+
+}
+
+.reservation__form .name {
+    grid-area: name;
+    box-shadow: 2px 2px 3px black
+}
+
+.reservation__form .email {
+    grid-area: email;
+    box-shadow: 2px 2px 3px black
+}
+
+.reservation__form .date {
+    grid-area: date;
+    box-shadow: 2px 2px 3px black
+}
+
+.reservation__form .time {
+    grid-area: time;
+    box-shadow: 2px 2px 3px black
+}
+
+.reservation__form .people {
+    grid-area: people;
+    box-shadow: 2px 2px 3px black
+}
+
+.reservation__form .button {
+    grid-area: button;
+    border: 0;
+    background-color: rgb(240, 18, 18);
+    font-family: 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 05px;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px black;
+}
+
+/**** FOOTER ****/
+footer {
+    padding: 6rem;
+    padding-top: 0;
+
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/foot5.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 2.7rem;
+    box-shadow: 15px 15px 20px black;
+    /* position: relative;*/
+
+}
+
+/*.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+}*/
+
+footer h2,
+footer p {
+    color: white;
+    text-shadow: 1.3px 1.3px 1.2px black;
+
+}
+
+.footer__top,
+.footer__botton {
+    z-index: 1;
+}
+
+.footer__top {
+    display: flex;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding-block: 2.5rem;
+   
+
+}
+
+.footer__top>div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.footer__top>div:nth-child(2) {
+    align-items: flex-end;
+    font-size: 1.4rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.footer h2 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.footer__top p {
+    font-family: 'Lato', sans-serif;
+}
